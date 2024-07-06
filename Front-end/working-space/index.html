@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Collaborative Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="user-list">
+                <h3>Active Users</h3>
+                <ul id="users"></ul>
+            </div>
+            <div class="files-list">
+                <h3>Files</h3>
+                <ul id="files"></ul>
+            </div>
+            <div class="chat-section">
+                <h3>Chat</h3>
+                <div id="chat-messages"></div>
+                <div class="type-style">
+                    <input type="text" id="chat-input" placeholder="Type your message...">
+                    <button id="send-message-btn">
+                        <img id="send-btn" src="send-button.png" alt="Send">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="editor-container">
+            <div class="toolbar">
+                <label for="font-size"><strong>Font Size:</strong></label>
+                <select class="font-size-style" id="font-size">
+                    <option value="14">14px</option>
+                    <option value="16" selected>16px</option>
+                    <option value="18">18px</option>
+                    <option value="20">20px</option>
+                </select>
+                <button id="kick-user-btn">Kick User</button>
+                <button id="add-file-btn-toolbar">Add File</button>
+            </div>
+            <textarea id="code-editor" placeholder="Start coding..."></textarea>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/mode/javascript/javascript.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Collaborative Code Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="user-list">
+        <h3>Active Users</h3>
+        <ul id="users"></ul>
+      </div>
+      <div class="files-list">
+        <h3>Files</h3>
+        <ul id="files"></ul>
+      </div>
+      <div class="chat-section">
+        <h3>Chat</h3>
+        <div id="chat-messages"></div>
+        <div class="type-style">
+          <input type="text" id="chat-input" placeholder="Type your message...">
+          <button id="send-message-btn">
+            <img id="send-btn" src="send-button.png" alt="Send">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="editor-container">
+      <div class="toolbar">
+        <label for="font-size"><strong>Font Size:</strong></label>
+        <select class="font-size-style" id="font-size">
+          <option value="14">14px</option>
+          <option value="16" selected>16px</option>
+          <option value="18">18px</option>
+          <option value="20">20px</option>
+        </select>
+        <button id="kick-user-btn">Kick User</button>
+        <button id="add-file-btn-toolbar">Add File</button>
+      </div>
+      <textarea id="code-editor" placeholder="Start coding..."></textarea>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.61.1/mode/javascript/javascript.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

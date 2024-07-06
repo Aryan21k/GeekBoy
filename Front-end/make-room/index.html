@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Room</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Eat, Sleep, <span class="code-highlight">CODE</span>, repeat</h1>
+        <p>Real-Time Collaborative Code Editor</p>
+    </div>
+    <div class="major">
+        <div class="image-container">
+            <img class="image" src="file.png" alt="Illustration">
+        </div>
+        <div class="form-container">
+            <form class="room-form" id="createRoomForm">
+                <h2 style="color:white">Make Room</h2>
+                <div class="form-group">
+                    <label style="color:white" for="room-id"><strong>Room ID</strong></label>
+                    <input type="text" id="room-id" name="room-id" placeholder="Room ID will be generated">
+                    <button id="generate-room-id-btn">Generate</button>
+                </div>
+                <div class="form-group">
+                    <label style="color:white" for="username"><strong>Username</strong></label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="button-group">
+                    <a href="http://127.0.0.1:5500/working-space/index.html"><button type="submit">Make Room</button></a>
+                    <a id="unique" href="http://127.0.0.1:5500/Front-end/Join-room/index.html" target="_blank"><strong>Join a Room</strong></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

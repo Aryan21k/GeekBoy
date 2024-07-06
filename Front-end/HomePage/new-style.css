@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black; 
+}
+
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: black; 
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    background-color: white;
+    margin-top: 7.5px;
+    margin-left: -100px;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+nav ul {
+    margin-left: -300px;
+    width: 450px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    transition:  color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color:#ba0773;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.searchbox {
+    position: relative;
+    margin-right: 20px;
+}
+
+.searchbox input[type="search"] {
+    background-color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 210px;
+    outline: none;
+}
+
+.searchbox i {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.nav-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.signup {
+    font-size: medium;
+    font-weight:700;
+    background-color: #007bff;
+}
+
+.login {
+    font-size: medium;
+    font-weight:700;
+    background-color: #4E1336;
+}
+
+.join-room {
+    font-size: medium;
+    font-weight:700;
+    background-color: #ba0773;
+}
+
+.nav-buttons button:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 95px;
+    color: white;
+    font-weight: 50px;
+    position: relative;
+    display:block;
+}
+
+.content h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* Adjust the stroke width as needed */
+    z-index: -1;
+}
+
+.content h1:hover::before {
+    color: transparent;
+    -webkit-text-stroke: none; /* Remove the text stroke on hover */
+}
+
+.content h1:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px white; /* Add a white stroke to create the border */
+}
+
+.explore-button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding: 8px 20px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #ba0773;
+    color: #ffffff;
+}
+
+section {
+    padding: 318px 8%;
+    background-color: #000000;
+}
+
+section h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 18px;
+    color: #8e8e8e;
+}
+
+.separator {
+    height: 10px;
+    background-color:#157bb6;
+    width: 100%;
+}
+
+#suggestions {
+    padding-top: 200px;
+    padding-bottom: 268px;
+}
+
+.suggestion-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.suggestion-form textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.suggestion-form button {
+    font-size:12px;
+    font-weight: 700;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ba0773;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.29s;
+}
+
+.suggestion-form button:hover {
+    background-color: #540032;
+}
